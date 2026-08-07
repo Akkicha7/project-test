@@ -1,0 +1,16 @@
+/* FLAW: This completely breaks the visual layout of the page */
+* {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* FLAW: Terrible accessibility/contrast. Black text on dark gray. */
+    background-color: #333333;
+    color: #000000; 
+}
+
+#container {
+    width: 100%;
+}
